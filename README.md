@@ -20,7 +20,11 @@ New-Item database/database.sqlite -ItemType File -Force
 php artisan migrate:fresh --seed
 php artisan serve --host=0.0.0.0 --port=8000
 ```
+Если возникает проблема с портами, то пробуем другой:
 
+```powershell
+php artisan serve --host=0.0.0.0 --port=8080
+```
 Проверка API:
 
 ```text
